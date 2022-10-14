@@ -5,16 +5,18 @@ public class Course {
 	private String courseName;
 	private String description;
 	private String instructor;
+	private double price;
 	
 	public Course() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Course(int id, String courseName, String description, String instructor) {
+	public Course(int id, String courseName, String description, String instructor, double price) {
 		this.id = id;
 		this.courseName = courseName;
 		this.description = description;
 		this.instructor = instructor;
+		this.price = price;
 	}
 
 	public int getId() {
@@ -49,4 +51,11 @@ public class Course {
 		this.instructor = instructor;
 	}
 	
+	public double getPrice() {
+		return price;
+	}
+	
+	public void setPrice(double price) {
+		this.price = price;
+	}
 }
